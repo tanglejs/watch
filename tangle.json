@@ -1,0 +1,9 @@
+{
+  "plugin": {
+    "name": "watch",
+    "version": "0.0.0",
+    "description": "Watch files for changes and rebuild",
+    "subcommand": "watch",
+    "type": "runner"
+  }
+}

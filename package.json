@@ -1,0 +1,63 @@
+{
+  "name": "watch",
+  "version": "0.0.0",
+  "description": "Watch files for changes and rebuild",
+  "main": "index.coffee",
+  "directories": {
+    "man": "man",
+    "doc": "readme"
+  },
+  "bin": {
+    "tangle-watch": "bin/tangle-watch.coffee"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "preferGlobal": true,
+  "author": {
+    "name": "Logan Koester",
+    "email": "logan@logankoester.com",
+    "url": "http://logankoester.com"
+  },
+  "dependencies": {
+    "tangle-config": "~0.1.0",
+    "tangle-util": "~0.0.0",
+    "helmsman": "git://github.com/logankoester/node-helmsman#path-and-non-js",
+    "yeoman-generator": "~0.16.0",
+    "underscore.string": "~2.3.3",
+    "lodash": "~2.4.1",
+    "grunt-contrib-watch": "^0.6.1"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-bump": "git://github.com/logankoester/grunt-bump#gpg-sign",
+    "grunt-readme-generator": "~0.3.41",
+    "marked-man": "0.1.1",
+    "grunt-mocha-cli": "~1.5.0",
+    "grunt-contrib-clean": "~0.5.0",
+    "chai": "~1.9.0",
+    "coffee-script": "~1.7.1"
+  },
+  "keywords": [
+    "tangle",
+    "tangle-plugin"
+  ],
+  "homepage": "https://github.com/tanglejs/watch",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tanglejs/watch.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tanglejs/watch/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/tanglejs/watch/blob/master/LICENSE-MIT"
+    }
+  ],
+  "engines": {
+    "node": ">= 0.10.0"
+  }
+}
