@@ -65,10 +65,9 @@ module.exports = (grunt) ->
 
     bump:
       options:
-        files: ['package.json', 'tangle.json']
         commit: true
         commitMessage: 'Release v%VERSION%'
-        commitFiles: ['package.json', 'tangle.json']
+        commitFiles: ['package.json']
         createTag: true
         tagName: 'v%VERSION%'
         tagMessage: 'Version %VERSION%'
