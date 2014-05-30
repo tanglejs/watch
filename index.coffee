@@ -2,11 +2,7 @@ module.exports = WatchBuilder = (grunt) ->
   _ = require 'lodash'
   path = require 'path'
   walkTree = require './lib/walk_tree'
-
-  inside = (newDir, callback) ->
-    prevDir = process.cwd()
-    grunt.file.setBase newDir
-    callback -> grunt.file.setBase(prevDir)
+  inside = require('tangle-util/grunt').inside
 
   # Task configuration
   grunt.initConfig watch: walkTree('./', {
@@ -16,13 +12,13 @@ module.exports = WatchBuilder = (grunt) ->
       options:
         livereload: true
       files: [
-        'build/www/css/**/*.css'
-        'build/www/js/**/*.js'
-        'build/www/index.html'
+        'build/app/**/*.css'
+        'build/app/**/*.js'
+        'build/app/index.html'
       ]
   })
 
-  inside __dirname, (done) ->
+  inside __dirname, grunt, (done) ->
     grunt.loadNpmTasks 'grunt-contrib-watch'
     done()
 
