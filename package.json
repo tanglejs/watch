@@ -1,5 +1,5 @@
 {
-  "name": "watch",
+  "name": "tangle-watch",
   "version": "0.0.0",
   "description": "Watch files for changes and rebuild",
   "main": "index.coffee",
@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "tangle-config": "~0.1.0",
-    "tangle-util": "~0.0.0",
+    "tangle-util": "~0.1.0",
     "helmsman": "git://github.com/logankoester/node-helmsman#path-and-non-js",
     "yeoman-generator": "~0.16.0",
     "underscore.string": "~2.3.3",
