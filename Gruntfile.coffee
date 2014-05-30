@@ -17,7 +17,7 @@ module.exports = (grunt) ->
 
     clean:
       docs: ['man/']
-      tests: ['tests/tmp/']
+      test: ['test/tmp/']
 
     watch:
       all:
@@ -27,15 +27,15 @@ module.exports = (grunt) ->
           'subcommands/*/templates/**/*'
           'subcommands/**/*.coffee'
           'readme/**/*.md'
-          'tests/**/*.coffee'
-          '!tests/tmp/**/*'
+          'test/**/*.coffee'
+          '!test/tmp/**/*'
         ]
         tasks: ['default']
 
     mochacli:
       options:
         compilers: ['coffee:coffee-script/register']
-      all: ['tests/**/*_test.coffee']
+      all: ['test/**/*_test.coffee']
 
     readme_generator:
       help:
